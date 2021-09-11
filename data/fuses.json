@@ -1,0 +1,19 @@
+[
+  { "equipmentName": "ABS, ASC", "fuseNumbers": [12, 33, 42, 53, 56] },
+  { "equipmentName": "Adjustment driver seat", "fuseNumbers": [65] },
+  { "equipmentName": "Adjustment passenger seat", "fuseNumbers": [70] },
+  { "equipmentName": "Airbag", "fuseNumbers": [11] },
+  { "equipmentName": "Air conditioner", "fuseNumbers": [28, 62, 63] },
+  { "equipmentName": "Automatic fearbox diesel", "fuseNumbers": [64] },
+  { "equipmentName": "Blower", "fuseNumbers": [28, 50] },
+  { "equipmentName": "Brake light", "fuseNumbers": [9] },
+  { "equipmentName": "Central locking system", "fuseNumbers": [49, 52, 60] },
+  { "equipmentName": "Central locking system (only touring)", "fuseNumbers": [49, 52, 58, 60] },
+  { "equipmentName": "Cigarette lighter", "fuseNumbers": [47] },
+  { "equipmentName": "Cigarette lighter (Australia)", "fuseNumbers": [26, 47] },
+  { "equipmentName": "DSC", "fuseNumbers": [12, 33, 40, 42, 53, 56, 61] },
+  { "equipmentName": "DSC 4-wheel drive", "fuseNumbers": [12, 33, 35, 40, 42, 53] },
+  { "equipmentName": "Electric fan", "fuseNumbers": [37] },
+  { "equipmentName": "Electric seat heating", "fuseNumbers": [12, 42] },
+  { "equipmentName": "Engine control", "fuseNumbers": [27, 29, 30] }
+]
