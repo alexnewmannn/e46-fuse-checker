@@ -1,23 +1,13 @@
 import styled from 'styled-components';
 import fusesData from '../data/fuses.json';
-import { useAppStateContext, useAppDispatchContext } from '../context/state';
+import FuseItem from './fuse-item';
 
 const Dl = styled.dl`
-  width: 80%;
-`;
-const ItemWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px 0;
-  border-top: 1px solid #e6e6e7;
+  margin-right: 3rem;
+  margin-bottom: 0;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-
-  &:nth-child(1) {
-    border-top: 0;
+  &:nth-child(odd) {
+    margin-left: 3rem;
   }
 `;
 
@@ -37,61 +27,62 @@ const Dt = styled.dt`
   }
 `;
 
-type FuseItemType = {
-  activeFuse?: Number
-  fuse: Number
-};
+const ListWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  width: 100%;
+`;
 
-const FuseItem = styled.button<FuseItemType>`
-  appearance: none;
-  border: 0;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 30px;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  cursor: pointer;
-  background: ${(props: FuseItemType) => {
-    console.log(props.activeFuse, props.fuse, 'hi there');
-    return props.activeFuse === props.fuse ? '#33a0d1' : '#e6e6e7';
-  }};
+const ItemWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid #e6e6e7;
 
-  &:hover {
-    background: #33a0d1;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
-  &:nth-of-type(1n+2) {
-    margin-left: 10px;
+
+  &:nth-child(1) {
+    border-top: 0;
   }
 `;
 
 const FuseList: React.FC = () => {
-  const appStateContext = useAppStateContext();
-  const dispatch = useAppDispatchContext();
-  // const fuseGroupLength = 5;
-  // const groups = fusesData.map((item, index) => {
-  //   return index % fuseGroupLength === 0 ? fusesData.slice(index, index + fuseGroupLength) : null;
-  //   }).filter(function(item){ return item;});
-
-  const someThing = (fuse: Number) => (
-    dispatch({
-      type: 'TEST', payload: { activeFuse: fuse },
+  const fuseGroupLength = 10;
+  // https://stackoverflow.com/a/19679493
+  const groups = fusesData
+    .map((item, index) => {
+      return index % fuseGroupLength === 0
+        ? fusesData.slice(index, index + fuseGroupLength)
+        : null;
     })
-  );
-
-  console.log(fusesData);
+    .filter(function (item) {
+      return item;
+    });
 
   return (
-    <Dl>
-      {fusesData.map((fuseItem, i) => (
-        <ItemWrapper key={i}>
-          <Dd>{fuseItem.equipmentName}</Dd>
-          <Dt>{fuseItem.fuseNumbers.map((fuse, j) => <FuseItem type="button" fuse={fuse} activeFuse={appStateContext.activeFuse} key={j} onClick={() => {
-            someThing(fuse);
-          }}>{fuse}</FuseItem>)}</Dt>
-        </ItemWrapper>
-      ))}
-    </Dl>
+    <ListWrapper>
+      {groups &&
+        groups.map((fuseGroup, i) => (
+          <Dl key={i}>
+            {fuseGroup &&
+              fuseGroup.map((fuseItem, j) => (
+                <ItemWrapper key={j}>
+                  <Dd>{fuseItem.equipmentName}</Dd>
+                  <Dt>
+                    {fuseItem.fuseNumbers.map((fuse, k) => (
+                      <FuseItem fuse={fuse} key={k}>
+                        {fuse}
+                      </FuseItem>
+                    ))}
+                  </Dt>
+                </ItemWrapper>
+              ))}
+          </Dl>
+        ))}
+    </ListWrapper>
   );
 };
 

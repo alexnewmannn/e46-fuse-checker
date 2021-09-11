@@ -1,28 +1,32 @@
 import React, { createContext, useContext, useReducer } from 'react';
 
-const reducer = (state, action) => {
-  console.log(state, 'state', action, 'action')
+type SetActiveFuseAction = {
+  type: string;
+  payload: Object;
+};
+
+const reducer = (state: Object, action: SetActiveFuseAction) => {
   switch (action.type) {
-    case 'TEST':
+    case 'SET_ACTIVE_FUSE':
       return {
         ...state,
-        ...action.payload
-      }
+        ...action.payload,
+      };
     default:
-      throw new Error(`Unknown action: ${action.type}`)
+      throw new Error(`Unknown action: ${action.type}`);
   }
-}
+};
 
-const initialState = {}
+const initialState = {};
 const AppDispatchContext = createContext<string | object>({
   state: initialState,
-  dispatch: () => null
+  dispatch: () => null,
 });
 const AppStateContext = createContext<string | object>(initialState);
 
-export const AppWrapper: React.FC = ({children}) => {
-  let sharedState = {}
-  const [state, dispatch] = useReducer(reducer, sharedState)
+export const AppWrapper: React.FC = ({ children }) => {
+  let sharedState = {};
+  const [state, dispatch] = useReducer(reducer, sharedState);
   return (
     <AppDispatchContext.Provider value={dispatch}>
       <AppStateContext.Provider value={state}>
@@ -30,7 +34,8 @@ export const AppWrapper: React.FC = ({children}) => {
       </AppStateContext.Provider>
     </AppDispatchContext.Provider>
   );
-}
+};
 
-export const useAppStateContext = () => useContext(AppStateContext)
-export const useAppDispatchContext = () => useContext(AppDispatchContext)
+export const useAppStateContext: Function = () => useContext(AppStateContext);
+export const useAppDispatchContext: Function = () =>
+  useContext(AppDispatchContext);
