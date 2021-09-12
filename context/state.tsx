@@ -24,7 +24,8 @@ const AppDispatchContext = createContext<string | object>({
 });
 const AppStateContext = createContext<string | object>(initialState);
 
-export const AppWrapper: React.FC = ({ children }) => {
+type Props = { children: React.ReactNode };
+export const AppWrapper = ({ children }: Props) => {
   let sharedState = {};
   const [state, dispatch] = useReducer(reducer, sharedState);
   return (
@@ -36,6 +37,6 @@ export const AppWrapper: React.FC = ({ children }) => {
   );
 };
 
-export const useAppStateContext: Function = () => useContext(AppStateContext);
+export const useAppStateContext = () => useContext(AppStateContext);
 export const useAppDispatchContext: Function = () =>
   useContext(AppDispatchContext);

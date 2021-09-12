@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import fusesData from '../data/fuses.json';
+import { splitArrayToChunks } from '../utils/split-array-to-chunks';
 import FuseItem from './fuse-item';
 
 const Dl = styled.dl`
@@ -49,18 +50,13 @@ const ItemWrapper = styled.div`
   }
 `;
 
-const FuseList: React.FC = () => {
-  const fuseGroupLength = 10;
-  // https://stackoverflow.com/a/19679493
-  const groups = fusesData
-    .map((item, index) => {
-      return index % fuseGroupLength === 0
-        ? fusesData.slice(index, index + fuseGroupLength)
-        : null;
-    })
-    .filter(function (item) {
-      return item;
-    });
+type AppProps = {
+  groupSize: number;
+};
+
+const FuseList = ({ groupSize }: AppProps) => {
+  const fuseGroupLength = groupSize || 10;
+  const groups = splitArrayToChunks(fusesData, fuseGroupLength);
 
   return (
     <ListWrapper>
@@ -72,10 +68,8 @@ const FuseList: React.FC = () => {
                 <ItemWrapper key={j}>
                   <Dd>{fuseItem.equipmentName}</Dd>
                   <Dt>
-                    {fuseItem.fuseNumbers.map((fuse, k) => (
-                      <FuseItem fuse={fuse} key={k}>
-                        {fuse}
-                      </FuseItem>
+                    {fuseItem.fuseNumbers.map((fuse: number, k: number) => (
+                      <FuseItem fuse={fuse} key={k} />
                     ))}
                   </Dt>
                 </ItemWrapper>

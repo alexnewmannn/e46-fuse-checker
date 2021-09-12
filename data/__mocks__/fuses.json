@@ -1,0 +1,46 @@
+[
+  {
+    "equipmentName": "ABS, ASC",
+    "fuseNumbers": [12, 33, 42, 53, 56]
+  },
+  {
+    "equipmentName": "Adjustment driver seat",
+    "fuseNumbers": [65]
+  },
+  {
+    "equipmentName": "Adjustment passenger seat",
+    "fuseNumbers": [70]
+  },
+  {
+    "equipmentName": "Airbag",
+    "fuseNumbers": [11]
+  },
+  {
+    "equipmentName": "Air conditioner",
+    "fuseNumbers": [28, 62, 63]
+  },
+  {
+    "equipmentName": "Automatic fearbox diesel",
+    "fuseNumbers": [64]
+  },
+  {
+    "equipmentName": "Blower",
+    "fuseNumbers": [28, 50]
+  },
+  {
+    "equipmentName": "Brake light",
+    "fuseNumbers": [9]
+  },
+  {
+    "equipmentName": "Central locking system",
+    "fuseNumbers": [49, 52, 60]
+  },
+  {
+    "equipmentName": "Central locking system (only touring)",
+    "fuseNumbers": [49, 52, 58, 60]
+  },
+  {
+    "equipmentName": "Cigarette lighter",
+    "fuseNumbers": [47]
+  }
+]

@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="layout__Wrapper-sc-j204bx-0 kgnyQg"
+  >
+    <main
+      class="layout__Main-sc-j204bx-1 kCvrKR"
+    >
+      <div
+        class="fuse-list__ListWrapper-sc-1gw2dho-3 fncDRc"
+      >
+        <dl
+          class="fuse-list__Dl-sc-1gw2dho-0 iwAwqk"
+        >
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              ABS, ASC
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                12
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                33
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                42
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                53
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                56
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Adjustment driver seat
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                65
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Adjustment passenger seat
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                70
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Airbag
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                11
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Air conditioner
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                28
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                62
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                63
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Automatic fearbox diesel
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                64
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Blower
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                28
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                50
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Brake light
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                9
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Central locking system
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                49
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                52
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                60
+              </button>
+            </dt>
+          </div>
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Central locking system (only touring)
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                49
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                52
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                58
+              </button>
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                60
+              </button>
+            </dt>
+          </div>
+        </dl>
+        <dl
+          class="fuse-list__Dl-sc-1gw2dho-0 iwAwqk"
+        >
+          <div
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+          >
+            <dd
+              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            >
+              Cigarette lighter
+            </dd>
+            <dt
+              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+            >
+              <button
+                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                type="button"
+              >
+                47
+              </button>
+            </dt>
+          </div>
+        </dl>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;

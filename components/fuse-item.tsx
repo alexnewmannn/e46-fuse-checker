@@ -1,10 +1,28 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { useAppStateContext, useAppDispatchContext } from '../context/state';
 
 type FuseType = {
-  activeFuse?: Number;
-  fuse?: Number;
+  activeFuse?: number;
+  fuse?: number;
+  isCurrentFuseActive: boolean;
 };
+
+const scaleUp = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5)
+  }
+  100% {
+    transform: scale(1)
+  }
+`;
+
+const animation = () =>
+  css`
+    ${scaleUp} 0.3s linear;
+  `;
 
 const Fuse = styled.button<FuseType>`
   appearance: none;
@@ -16,8 +34,11 @@ const Fuse = styled.button<FuseType>`
   height: 30px;
   display: inline-block;
   cursor: pointer;
+  transform: scale(1);
   background: ${(props: FuseType) =>
-    props.activeFuse === props.fuse ? '#33a0d1' : '#e6e6e7'};
+    props.isCurrentFuseActive ? '#33a0d1' : '#e6e6e7'};
+  animation: ${(props: FuseType) =>
+    props.isCurrentFuseActive ? animation : ''};
 
   &:hover {
     background: #33a0d1;
@@ -28,17 +49,19 @@ const Fuse = styled.button<FuseType>`
 `;
 
 type FuseItemType = {
-  fuse: Number;
-  activeFuse?: Number;
-  key: Number;
+  fuse: number;
+  activeFuse?: number;
+  key: number;
 };
 
-const FuseItem: React.FC<FuseItemType> = ({ fuse }) => {
+const FuseItem = ({ fuse }: FuseItemType) => {
   const appStateContext = useAppStateContext();
   const dispatch = useAppDispatchContext();
+  console.log(dispatch, 'dispatch');
   const { activeFuse } = appStateContext;
+  const isCurrentFuseActive = activeFuse === fuse;
 
-  const setActiveFuse = (activeFuse: Number) =>
+  const setActiveFuse = (activeFuse: number) =>
     dispatch({
       type: 'SET_ACTIVE_FUSE',
       payload: {
@@ -49,9 +72,9 @@ const FuseItem: React.FC<FuseItemType> = ({ fuse }) => {
   return (
     <Fuse
       type="button"
-      activeFuse={activeFuse}
+      isCurrentFuseActive={isCurrentFuseActive}
       onClick={setActiveFuse.bind(this, fuse)}
-      fuse={fuse}
+      data-isactive={isCurrentFuseActive}
     >
       {fuse}
     </Fuse>
