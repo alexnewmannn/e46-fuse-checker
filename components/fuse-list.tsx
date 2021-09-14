@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import fusesData from '../data/fuses.json';
 import { splitArrayToChunks } from '../utils/split-array-to-chunks';
 import FuseItem from './fuse-item';
+import { useAppStateContext } from '../context/state';
 
 const Dl = styled.dl`
-  margin-right: 3rem;
   margin-bottom: 0;
 
   &:nth-child(odd) {
-    margin-left: 3rem;
+    margin-right: 1.5rem;
   }
 `;
 
@@ -34,12 +34,24 @@ const ListWrapper = styled.div`
   width: 100%;
 `;
 
-const ItemWrapper = styled.div`
+type ItemWrapperType = {
+  hideInactiveFuses?: boolean;
+  isCurrentFuseActive?: boolean;
+};
+
+const ItemWrapper = styled.div<ItemWrapperType>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px 0;
   border-top: 1px solid #e6e6e7;
+  display: ${(props: ItemWrapperType) => {
+    if (!props.hideInactiveFuses || props.isCurrentFuseActive) {
+      return 'flex';
+    } else {
+      return 'none';
+    }
+  }};
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -54,26 +66,31 @@ type AppProps = {
   groupSize: number;
 };
 
-const FuseList = ({ groupSize }: AppProps) => {
-  const fuseGroupLength = groupSize || 10;
-  const groups = splitArrayToChunks(fusesData, fuseGroupLength);
-
+const FuseList = ({ groupSize = 10 }: AppProps) => {
+  const groups = splitArrayToChunks(fusesData, groupSize);
+  const appStateContext = useAppStateContext();
+  const { hideInactiveFuses, activeFuse, errors } = appStateContext;
+  console.log(errors, 'errors');
   return (
     <ListWrapper>
-      {groups &&
+      {errors.length > 0 && <div>{errors[0].message}</div>}
+      {!errors.length &&
         groups.map((fuseGroup, i) => (
           <Dl key={i}>
-            {fuseGroup &&
-              fuseGroup.map((fuseItem, j) => (
-                <ItemWrapper key={j}>
-                  <Dd>{fuseItem.equipmentName}</Dd>
-                  <Dt>
-                    {fuseItem.fuseNumbers.map((fuse: number, k: number) => (
-                      <FuseItem fuse={fuse} key={k} />
-                    ))}
-                  </Dt>
-                </ItemWrapper>
-              ))}
+            {fuseGroup.map((fuseItem, j) => (
+              <ItemWrapper
+                key={j}
+                hideInactiveFuses={hideInactiveFuses}
+                isCurrentFuseActive={fuseItem.fuseNumbers.includes(activeFuse)}
+              >
+                <Dd>{fuseItem.equipmentName}</Dd>
+                <Dt>
+                  {fuseItem.fuseNumbers.map((fuse: number, k: number) => (
+                    <FuseItem fuse={fuse} key={k} />
+                  ))}
+                </Dt>
+              </ItemWrapper>
+            ))}
           </Dl>
         ))}
     </ListWrapper>

@@ -29,12 +29,16 @@ const Fuse = styled.button<FuseType>`
   border: 0;
   font-weight: bold;
   text-align: center;
-  border-radius: 30px;
-  width: 30px;
-  height: 30px;
+  border-radius: 3rem;
+  width: 3rem;
+  height: 3rem;
   display: inline-block;
   cursor: pointer;
   transform: scale(1);
+  display: ${(props: FuseType) =>
+    props.hideInactiveFuses && props.isCurrentFuseActive
+      ? 'none'
+      : 'inline-block'};
   background: ${(props: FuseType) =>
     props.isCurrentFuseActive ? '#33a0d1' : '#e6e6e7'};
   animation: ${(props: FuseType) =>
@@ -57,7 +61,7 @@ type FuseItemType = {
 const FuseItem = ({ fuse }: FuseItemType) => {
   const appStateContext = useAppStateContext();
   const dispatch = useAppDispatchContext();
-  console.log(dispatch, 'dispatch');
+
   const { activeFuse } = appStateContext;
   const isCurrentFuseActive = activeFuse === fuse;
 
@@ -73,8 +77,7 @@ const FuseItem = ({ fuse }: FuseItemType) => {
     <Fuse
       type="button"
       isCurrentFuseActive={isCurrentFuseActive}
-      onClick={setActiveFuse.bind(this, fuse)}
-      data-isactive={isCurrentFuseActive}
+      onClick={() => setActiveFuse(fuse)}
     >
       {fuse}
     </Fuse>

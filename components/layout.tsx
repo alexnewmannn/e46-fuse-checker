@@ -3,25 +3,40 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1.5rem;
+
+  &::before {
+    content: '';
+    width: 100%;
+    max-width: 85rem;
+    background: linear-gradient(
+      135deg,
+      #81c4ff 0%,
+      #81c4ff 33%,
+      #16588e 33%,
+      #16588e 66%,
+      #e7222e 66%,
+      #e7222e 100%
+    );
+    height: 10px;
+  }
 `;
 
 const Main = styled.main`
   background: white;
-  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 3rem;
   align-items: center;
   margin: auto;
-  max-width: 120rem;
+  max-width: 85rem;
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.4);
-  padding: 1rem;
+  padding: 1.5rem;
 `;
 
 type Props = {

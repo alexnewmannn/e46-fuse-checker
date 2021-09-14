@@ -1,11 +1,15 @@
 // Taken from @dbasch: https://stackoverflow.com/a/19679493
+// Modified to return an empty array instead of null to avoid type guard.
 
-export const splitArrayToChunks = (arrayToSplit: any[], chunkSize: number) => {
+export const splitArrayToChunks = (
+  arrayToSplit: any[],
+  chunkSize: number
+): any[][] => {
   return arrayToSplit
-    .map((item, index) => {
+    .map((item, index): any[] => {
       return index % chunkSize === 0
         ? arrayToSplit.slice(index, index + chunkSize)
-        : null;
+        : [];
     })
-    .filter((item) => item);
+    .filter((item): boolean => !!item.length);
 };
