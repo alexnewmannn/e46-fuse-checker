@@ -3,19 +3,44 @@
 exports[`Home should match the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="layout__Wrapper-sc-j204bx-0 kgnyQg"
+    class="layout__Wrapper-sc-j204bx-0 ldzayb"
   >
     <main
-      class="layout__Main-sc-j204bx-1 kCvrKR"
+      class="layout__Main-sc-j204bx-1 eTRGqX"
     >
+      <h1>
+        e46 Fuse Checker
+      </h1>
+      <p>
+        Use the search input below or click any of the fuse buttons to see equipment items that share a fuse within BMW e46's.
+      </p>
+      <form
+        autocomplete="off"
+        class="search__Form-sc-bhhmub-0 hDbVJe"
+      >
+        <div
+          class="search__FormGroup-sc-bhhmub-1 bDbbVQ"
+        >
+          <label
+            class="search__Label-sc-bhhmub-4 hfgjNB"
+            for="search"
+          >
+            Search for a fuse
+          </label>
+          <input
+            class="search__Input-sc-bhhmub-3 edbpFA"
+            id="search"
+          />
+        </div>
+      </form>
       <div
         class="fuse-list__ListWrapper-sc-1gw2dho-3 fncDRc"
       >
         <dl
-          class="fuse-list__Dl-sc-1gw2dho-0 iwAwqk"
+          class="fuse-list__Dl-sc-1gw2dho-0 kfBxpx"
         >
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -26,31 +51,36 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 12 used by ABS, ASC"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 12
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 33 used by ABS, ASC"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 33
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 42 used by ABS, ASC"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 42
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 53 used by ABS, ASC"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 53
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 56 used by ABS, ASC"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 56
@@ -58,7 +88,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -69,7 +99,8 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 65 used by Adjustment driver seat"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 65
@@ -77,7 +108,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -88,7 +119,8 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 70 used by Adjustment passenger seat"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 70
@@ -96,7 +128,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -107,7 +139,8 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 11 used by Airbag"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 11
@@ -115,7 +148,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -126,19 +159,22 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 28 used by Air conditioner"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 28
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 62 used by Air conditioner"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 62
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 63 used by Air conditioner"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 63
@@ -146,7 +182,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -157,7 +193,8 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 64 used by Automatic fearbox diesel"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 64
@@ -165,7 +202,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -176,13 +213,15 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 28 used by Blower"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 28
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 50 used by Blower"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 50
@@ -190,7 +229,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -201,7 +240,8 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 9 used by Brake light"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 9
@@ -209,7 +249,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -220,19 +260,22 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 49 used by Central locking system"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 49
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 52 used by Central locking system"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 52
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 60 used by Central locking system"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 60
@@ -240,7 +283,7 @@ exports[`Home should match the snapshot 1`] = `
             </dt>
           </div>
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -251,25 +294,29 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 49 used by Central locking system (only touring)"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 49
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 52 used by Central locking system (only touring)"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 52
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 58 used by Central locking system (only touring)"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 58
               </button>
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 60 used by Central locking system (only touring)"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 60
@@ -278,10 +325,10 @@ exports[`Home should match the snapshot 1`] = `
           </div>
         </dl>
         <dl
-          class="fuse-list__Dl-sc-1gw2dho-0 iwAwqk"
+          class="fuse-list__Dl-sc-1gw2dho-0 kfBxpx"
         >
           <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 lkgTpu"
+            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
           >
             <dd
               class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
@@ -292,7 +339,8 @@ exports[`Home should match the snapshot 1`] = `
               class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
             >
               <button
-                class="fuse-item__Fuse-sc-ubvqww-0 PErem"
+                aria-label="Fuse number 47 used by Cigarette lighter"
+                class="fuse-item__Fuse-sc-ubvqww-0 fEAcZ"
                 type="button"
               >
                 47

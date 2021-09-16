@@ -68,9 +68,8 @@ type AppProps = {
 
 const FuseList = ({ groupSize = 10 }: AppProps) => {
   const groups = splitArrayToChunks(fusesData, groupSize);
-  const appStateContext = useAppStateContext();
-  const { hideInactiveFuses, activeFuse, errors } = appStateContext;
-  console.log(errors, 'errors');
+  const { state } = useAppStateContext();
+  const { hideInactiveFuses, activeFuse, errors } = state;
   return (
     <ListWrapper>
       {errors.length > 0 && <div>{errors[0].message}</div>}
@@ -86,7 +85,11 @@ const FuseList = ({ groupSize = 10 }: AppProps) => {
                 <Dd>{fuseItem.equipmentName}</Dd>
                 <Dt>
                   {fuseItem.fuseNumbers.map((fuse: number, k: number) => (
-                    <FuseItem fuse={fuse} key={k} />
+                    <FuseItem
+                      fuse={fuse}
+                      key={k}
+                      equipmentName={fuseItem.equipmentName}
+                    />
                   ))}
                 </Dt>
               </ItemWrapper>

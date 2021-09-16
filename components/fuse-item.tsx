@@ -1,11 +1,5 @@
 import styled, { keyframes, css } from 'styled-components';
-import { useAppStateContext, useAppDispatchContext } from '../context/state';
-
-type FuseType = {
-  activeFuse?: number;
-  fuse?: number;
-  isCurrentFuseActive: boolean;
-};
+import { useAppStateContext } from '../context/state';
 
 const scaleUp = keyframes`
   0% {
@@ -23,6 +17,13 @@ const animation = () =>
   css`
     ${scaleUp} 0.3s linear;
   `;
+
+type FuseType = {
+  activeFuse?: number;
+  fuse?: number;
+  isCurrentFuseActive: boolean;
+  hideInactiveFuses?: boolean;
+};
 
 const Fuse = styled.button<FuseType>`
   appearance: none;
@@ -56,13 +57,12 @@ type FuseItemType = {
   fuse: number;
   activeFuse?: number;
   key: number;
+  equipmentName: string;
 };
 
-const FuseItem = ({ fuse }: FuseItemType) => {
-  const appStateContext = useAppStateContext();
-  const dispatch = useAppDispatchContext();
-
-  const { activeFuse } = appStateContext;
+const FuseItem = ({ fuse, equipmentName }: FuseItemType) => {
+  const { state, dispatch } = useAppStateContext();
+  const { activeFuse } = state;
   const isCurrentFuseActive = activeFuse === fuse;
 
   const setActiveFuse = (activeFuse: number) =>
@@ -78,6 +78,7 @@ const FuseItem = ({ fuse }: FuseItemType) => {
       type="button"
       isCurrentFuseActive={isCurrentFuseActive}
       onClick={() => setActiveFuse(fuse)}
+      aria-label={`Fuse number ${fuse} used by ${equipmentName}`}
     >
       {fuse}
     </Fuse>

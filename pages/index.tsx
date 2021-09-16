@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <h1>e46 Fuse Checker</h1>
       <p>
         Use the search input below or click any of the fuse buttons to see
-        equipment items that share a fuse within BMW e46's.
+        equipment items that share a fuse within BMW e46&apos;s.
       </p>
       <SearchFuses />
       <FuseList groupSize={10} />

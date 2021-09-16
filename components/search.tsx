@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useAppDispatchContext } from '../context/state';
+import { useAppStateContext } from '../context/state';
 
 const Form = styled.form`
   width: 100%;
@@ -35,9 +35,6 @@ const Input = styled.input`
   border-radius: 0;
   appearance: none;
   width: 100%;
-  width: calc(100% - 0.6rem);
-  margin-top: 0.3rem;
-  margin-left: 0.3rem;
 
   &:focus {
     outline: 3px solid #81c4ff;
@@ -52,13 +49,23 @@ const Label = styled.label`
 `;
 
 const SearchFuses = () => {
-  const dispatch = useAppDispatchContext();
+  const { dispatch } = useAppStateContext();
   const emptyFuses = [1, 2, 3, 4, 16, 17, 18, 19, 20, 21];
 
   const updateFuse = (event: React.ChangeEvent<HTMLInputElement>) => {
     const parsedFuse = parseInt(event.currentTarget.value);
     const activeFuse = Number.isNaN(parsedFuse) ? 0 : parsedFuse;
     const isValidValue = activeFuse > 0;
+
+    if (event.currentTarget.value === '') {
+      return dispatch({
+        type: 'RESET_ACTIVE_FUSE',
+        payload: {
+          activeFuse: false,
+          hideInactiveFuses: false,
+        },
+      });
+    }
 
     if (emptyFuses.includes(activeFuse) || activeFuse > 71 || activeFuse <= 0) {
       return dispatch({
