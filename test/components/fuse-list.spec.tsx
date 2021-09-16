@@ -1,4 +1,5 @@
 import React from 'react';
+import { axe } from 'jest-axe';
 import FuseList from '../../components/fuse-list';
 import { render, screen, fireEvent } from '../test-utils';
 import fusesData from '../../data/fuses.json';
@@ -20,6 +21,13 @@ describe('FuseList', () => {
 
     // Make sure the amount of items in the dataset matches the amount of generated elements
     expect(fusesData.length).toBe(11);
+  });
+
+  it('should have no accessibility violations', async () => {
+    const { container } = render(<FuseList groupSize={4} />, {});
+    const results = await axe(container);
+
+    expect(results).toHaveNoViolations();
   });
 
   describe('user interactions', () => {

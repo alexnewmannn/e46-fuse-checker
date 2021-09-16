@@ -36,10 +36,6 @@ const Fuse = styled.button<FuseType>`
   display: inline-block;
   cursor: pointer;
   transform: scale(1);
-  display: ${(props: FuseType) =>
-    props.hideInactiveFuses && props.isCurrentFuseActive
-      ? 'none'
-      : 'inline-block'};
   background: ${(props: FuseType) =>
     props.isCurrentFuseActive ? '#33a0d1' : '#e6e6e7'};
   animation: ${(props: FuseType) =>

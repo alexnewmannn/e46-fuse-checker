@@ -52,7 +52,7 @@ const SearchFuses = () => {
   const { dispatch } = useAppStateContext();
   const emptyFuses = [1, 2, 3, 4, 16, 17, 18, 19, 20, 21];
 
-  const updateFuse = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const updateFuse = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const parsedFuse = parseInt(event.currentTarget.value);
     const activeFuse = Number.isNaN(parsedFuse) ? 0 : parsedFuse;
     const isValidValue = activeFuse > 0;
@@ -93,9 +93,7 @@ const SearchFuses = () => {
     >
       <FormGroup>
         <Label htmlFor="search">Search for a fuse</Label>
-        {/* <MWrapper> */}
         <Input id="search" onKeyUp={(e) => updateFuse(e)} />
-        {/* </MWrapper> */}
       </FormGroup>
     </Form>
   );

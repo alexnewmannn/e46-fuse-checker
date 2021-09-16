@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should match the snapshots 1`] = `
+<DocumentFragment>
+  <form
+    autocomplete="off"
+    class="search__Form-sc-bhhmub-0 hDbVJe"
+  >
+    <div
+      class="search__FormGroup-sc-bhhmub-1 bDbbVQ"
+    >
+      <label
+        class="search__Label-sc-bhhmub-4 hfgjNB"
+        for="search"
+      >
+        Search for a fuse
+      </label>
+      <input
+        class="search__Input-sc-bhhmub-3 edbpFA"
+        id="search"
+      />
+    </div>
+  </form>
+</DocumentFragment>
+`;

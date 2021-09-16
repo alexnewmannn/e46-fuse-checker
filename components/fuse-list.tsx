@@ -70,9 +70,14 @@ const FuseList = ({ groupSize = 10 }: AppProps) => {
   const groups = splitArrayToChunks(fusesData, groupSize);
   const { state } = useAppStateContext();
   const { hideInactiveFuses, activeFuse, errors } = state;
+  // TODO: Tidy error messages, move to single component
   return (
     <ListWrapper>
-      {errors.length > 0 && <div>{errors[0].message}</div>}
+      {errors.length > 0 && (
+        <div>
+          <p>{errors[0].message}</p>
+        </div>
+      )}
       {!errors.length &&
         groups.map((fuseGroup, i) => (
           <Dl key={i}>

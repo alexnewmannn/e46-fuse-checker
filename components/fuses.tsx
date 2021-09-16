@@ -9,7 +9,6 @@ const FuseWrapper = styled.div`
 
 const Fuses = () => {
   const fuses = Array.from(Array(71));
-  console.log(fuses);
   return (
     <FuseWrapper>
       {fuses.map((fuse, i) => (

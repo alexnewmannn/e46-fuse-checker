@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --config .prettierrc '*/**/*.{js,ts,tsx}' --write",
-    "test": "jest test/components/fuse-list.spec.tsx"
+    "test": "jest",
+    "coverage": "jest --coverage true"
   },
   "dependencies": {
     "next": "11.1.2",
