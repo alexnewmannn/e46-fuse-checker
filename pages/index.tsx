@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         equipment items that share a fuse within BMW e46&apos;s.
       </p>
       <SearchFuses />
-      <FuseList groupSize={10} />
+      <FuseList />
     </Layout>
   );
 };

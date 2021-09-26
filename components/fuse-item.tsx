@@ -34,6 +34,8 @@ const Fuse = styled.button<FuseType>`
   width: 3rem;
   height: 3rem;
   display: inline-block;
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   transform: scale(1);
   background: ${(props: FuseType) =>
@@ -43,9 +45,6 @@ const Fuse = styled.button<FuseType>`
 
   &:hover {
     background: #33a0d1;
-  }
-  &:nth-of-type(1n + 2) {
-    margin-left: 10px;
   }
 `;
 

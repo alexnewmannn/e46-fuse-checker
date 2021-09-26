@@ -48,6 +48,11 @@ const Label = styled.label`
   margin-bottom: 1rem;
 `;
 
+const Hint = styled.div`
+  font-weight: normal;
+  opacity: 0.6;
+`;
+
 const SearchFuses = () => {
   const { dispatch } = useAppStateContext();
   const emptyFuses = [1, 2, 3, 4, 16, 17, 18, 19, 20, 21];
@@ -93,6 +98,9 @@ const SearchFuses = () => {
     >
       <FormGroup>
         <Label htmlFor="search">Search for a fuse</Label>
+        <Hint>
+          Only equipment that matches the search term will be displayed
+        </Hint>
         <Input id="search" onKeyUp={(e) => updateFuse(e)} />
       </FormGroup>
     </Form>

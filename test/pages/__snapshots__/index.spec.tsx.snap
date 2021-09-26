@@ -27,328 +27,325 @@ exports[`Home should match the snapshot 1`] = `
           >
             Search for a fuse
           </label>
+          <div
+            class="search__Hint-sc-bhhmub-5 bNkdDN"
+          >
+            Only equipment that matches the search term will be displayed
+          </div>
           <input
             class="search__Input-sc-bhhmub-3 edbpFA"
             id="search"
           />
         </div>
       </form>
-      <div
-        class="fuse-list__ListWrapper-sc-1gw2dho-3 fncDRc"
+      <dl
+        class="fuse-list__Dl-sc-1gw2dho-0 iQYUXI"
       >
-        <dl
-          class="fuse-list__Dl-sc-1gw2dho-0 kfBxpx"
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
         >
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
           >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
-            >
-              ABS, ASC
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 12 used by ABS, ASC"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                12
-              </button>
-              <button
-                aria-label="Fuse number 33 used by ABS, ASC"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                33
-              </button>
-              <button
-                aria-label="Fuse number 42 used by ABS, ASC"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                42
-              </button>
-              <button
-                aria-label="Fuse number 53 used by ABS, ASC"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                53
-              </button>
-              <button
-                aria-label="Fuse number 56 used by ABS, ASC"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                56
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
+            ABS, ASC
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
           >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            <button
+              aria-label="Fuse number 12 used by ABS, ASC"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
             >
-              Adjustment driver seat
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+              12
+            </button>
+            <button
+              aria-label="Fuse number 33 used by ABS, ASC"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
             >
-              <button
-                aria-label="Fuse number 65 used by Adjustment driver seat"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                65
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+              33
+            </button>
+            <button
+              aria-label="Fuse number 42 used by ABS, ASC"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
             >
-              Adjustment passenger seat
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+              42
+            </button>
+            <button
+              aria-label="Fuse number 53 used by ABS, ASC"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
             >
-              <button
-                aria-label="Fuse number 70 used by Adjustment passenger seat"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                70
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+              53
+            </button>
+            <button
+              aria-label="Fuse number 56 used by ABS, ASC"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
             >
-              Airbag
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 11 used by Airbag"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                11
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
-            >
-              Air conditioner
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 28 used by Air conditioner"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                28
-              </button>
-              <button
-                aria-label="Fuse number 62 used by Air conditioner"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                62
-              </button>
-              <button
-                aria-label="Fuse number 63 used by Air conditioner"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                63
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
-            >
-              Automatic fearbox diesel
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 64 used by Automatic fearbox diesel"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                64
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
-            >
-              Blower
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 28 used by Blower"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                28
-              </button>
-              <button
-                aria-label="Fuse number 50 used by Blower"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                50
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
-            >
-              Brake light
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 9 used by Brake light"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                9
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
-            >
-              Central locking system
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 49 used by Central locking system"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                49
-              </button>
-              <button
-                aria-label="Fuse number 52 used by Central locking system"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                52
-              </button>
-              <button
-                aria-label="Fuse number 60 used by Central locking system"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                60
-              </button>
-            </dt>
-          </div>
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
-          >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
-            >
-              Central locking system (only touring)
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
-            >
-              <button
-                aria-label="Fuse number 49 used by Central locking system (only touring)"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                49
-              </button>
-              <button
-                aria-label="Fuse number 52 used by Central locking system (only touring)"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                52
-              </button>
-              <button
-                aria-label="Fuse number 58 used by Central locking system (only touring)"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                58
-              </button>
-              <button
-                aria-label="Fuse number 60 used by Central locking system (only touring)"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                60
-              </button>
-            </dt>
-          </div>
-        </dl>
-        <dl
-          class="fuse-list__Dl-sc-1gw2dho-0 kfBxpx"
+              56
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
         >
-          <div
-            class="fuse-list__ItemWrapper-sc-1gw2dho-4 ekVjBZ"
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
           >
-            <dd
-              class="fuse-list__Dd-sc-1gw2dho-1 jCPjXa"
+            Adjustment driver seat
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 65 used by Adjustment driver seat"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
             >
-              Cigarette lighter
-            </dd>
-            <dt
-              class="fuse-list__Dt-sc-1gw2dho-2 jolBaN"
+              65
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Adjustment passenger seat
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 70 used by Adjustment passenger seat"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
             >
-              <button
-                aria-label="Fuse number 47 used by Cigarette lighter"
-                class="fuse-item__Fuse-sc-ubvqww-0 fBGLIw"
-                type="button"
-              >
-                47
-              </button>
-            </dt>
-          </div>
-        </dl>
-      </div>
+              70
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Airbag
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 11 used by Airbag"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              11
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Air conditioner
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 28 used by Air conditioner"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              28
+            </button>
+            <button
+              aria-label="Fuse number 62 used by Air conditioner"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              62
+            </button>
+            <button
+              aria-label="Fuse number 63 used by Air conditioner"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              63
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Automatic fearbox diesel
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 64 used by Automatic fearbox diesel"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              64
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Blower
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 28 used by Blower"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              28
+            </button>
+            <button
+              aria-label="Fuse number 50 used by Blower"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              50
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Brake light
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 9 used by Brake light"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              9
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Central locking system
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 49 used by Central locking system"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              49
+            </button>
+            <button
+              aria-label="Fuse number 52 used by Central locking system"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              52
+            </button>
+            <button
+              aria-label="Fuse number 60 used by Central locking system"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              60
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Central locking system (only touring)
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 49 used by Central locking system (only touring)"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              49
+            </button>
+            <button
+              aria-label="Fuse number 52 used by Central locking system (only touring)"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              52
+            </button>
+            <button
+              aria-label="Fuse number 58 used by Central locking system (only touring)"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              58
+            </button>
+            <button
+              aria-label="Fuse number 60 used by Central locking system (only touring)"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              60
+            </button>
+          </dt>
+        </div>
+        <div
+          class="fuse-list__ItemWrapper-sc-1gw2dho-3 jwefMJ"
+        >
+          <dd
+            class="fuse-list__Dd-sc-1gw2dho-1 dEPfZp"
+          >
+            Cigarette lighter
+          </dd>
+          <dt
+            class="fuse-list__Dt-sc-1gw2dho-2 iVbKya"
+          >
+            <button
+              aria-label="Fuse number 47 used by Cigarette lighter"
+              class="fuse-item__Fuse-sc-ubvqww-0 iQKMCk"
+              type="button"
+            >
+              47
+            </button>
+          </dt>
+        </div>
+      </dl>
     </main>
   </div>
 </DocumentFragment>

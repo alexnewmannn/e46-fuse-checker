@@ -6,24 +6,27 @@ type errorType = {
   status?: number;
 };
 
-interface AppStateContextData {
+interface InitialState {
   errors: errorType[];
   hideInactiveFuses: boolean;
-  activeFuse?: number;
 }
 
-const initialState: AppStateContextData = {
+const initialState: InitialState = {
   hideInactiveFuses: false,
   errors: [],
 };
 
-const AppStateContext = createContext<string | object>({
+interface Context {
+  state: {};
+  dispatch: React.Dispatch<any>;
+}
+
+const AppStateContext = createContext<Context>({
   state: initialState,
   dispatch: () => null,
 });
 
-type Props = { children: React.ReactNode };
-export const AppWrapper = ({ children }: Props) => {
+export const AppWrapper: React.FC = ({ children }) => {
   const [state, dispatch] = useReducer(reducers, initialState);
 
   return (

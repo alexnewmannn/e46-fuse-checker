@@ -9,13 +9,13 @@ jest.mock('../../data/fuses.json');
 
 describe('FuseList', () => {
   it('should match the snapshots', () => {
-    const { asFragment, debug } = render(<FuseList groupSize={4} />, {});
+    const { asFragment, debug } = render(<FuseList />, {});
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should generate a new DL per groupSize', () => {
-    const { container } = render(<FuseList groupSize={4} />, {});
-    expect(container.querySelectorAll('dl').length).toBe(3);
+  it('should generate the correct amount of elements', () => {
+    const { container } = render(<FuseList />, {});
+    expect(container.querySelectorAll('dl').length).toBe(1);
     expect(container.querySelectorAll('dd').length).toBe(11);
     expect(container.querySelectorAll('dt').length).toBe(11);
 
@@ -24,7 +24,7 @@ describe('FuseList', () => {
   });
 
   it('should have no accessibility violations', async () => {
-    const { container } = render(<FuseList groupSize={4} />, {});
+    const { container } = render(<FuseList />, {});
     const results = await axe(container);
 
     expect(results).toHaveNoViolations();
@@ -34,7 +34,7 @@ describe('FuseList', () => {
     it('it should change colour of the fuses the user has clicked', async () => {
       render(
         <AppWrapper>
-          <FuseList groupSize={4} />
+          <FuseList />
         </AppWrapper>
       );
 

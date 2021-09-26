@@ -15,6 +15,11 @@ exports[`Search should match the snapshots 1`] = `
       >
         Search for a fuse
       </label>
+      <div
+        class="search__Hint-sc-bhhmub-5 bNkdDN"
+      >
+        Only equipment that matches the search term will be displayed
+      </div>
       <input
         class="search__Input-sc-bhhmub-3 edbpFA"
         id="search"

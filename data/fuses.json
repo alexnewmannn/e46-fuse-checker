@@ -1,19 +1,286 @@
 [
-  { "equipmentName": "ABS, ASC", "fuseNumbers": [12, 33, 42, 53, 56] },
-  { "equipmentName": "Adjustment driver seat", "fuseNumbers": [65] },
-  { "equipmentName": "Adjustment passenger seat", "fuseNumbers": [70] },
-  { "equipmentName": "Airbag", "fuseNumbers": [11] },
-  { "equipmentName": "Air conditioner", "fuseNumbers": [28, 62, 63] },
-  { "equipmentName": "Automatic fearbox diesel", "fuseNumbers": [64] },
-  { "equipmentName": "Blower", "fuseNumbers": [28, 50] },
-  { "equipmentName": "Brake light", "fuseNumbers": [9] },
-  { "equipmentName": "Central locking system", "fuseNumbers": [49, 52, 60] },
-  { "equipmentName": "Central locking system (only touring)", "fuseNumbers": [49, 52, 58, 60] },
-  { "equipmentName": "Cigarette lighter", "fuseNumbers": [47] },
-  { "equipmentName": "Cigarette lighter (Australia)", "fuseNumbers": [26, 47] },
-  { "equipmentName": "DSC", "fuseNumbers": [12, 33, 40, 42, 53, 56, 61] },
-  { "equipmentName": "DSC 4-wheel drive", "fuseNumbers": [12, 33, 35, 40, 42, 53] },
-  { "equipmentName": "Electric fan", "fuseNumbers": [37] },
-  { "equipmentName": "Electric seat heating", "fuseNumbers": [12, 42] },
-  { "equipmentName": "Engine control", "fuseNumbers": [27, 29, 30] }
+  {
+    "equipmentName": "ABS, ASC",
+    "fuseNumbers": [12, 33, 42, 53, 56]
+  },
+  {
+    "equipmentName": "Adjustment driver seat",
+    "fuseNumbers": [65]
+  },
+  {
+    "equipmentName": "Adjustment passenger seat",
+    "fuseNumbers": [70]
+  },
+  {
+    "equipmentName": "Airbag",
+    "fuseNumbers": [11]
+  },
+  {
+    "equipmentName": "Air conditioner",
+    "fuseNumbers": [28, 62, 63]
+  },
+  {
+    "equipmentName": "Automatic fearbox diesel",
+    "fuseNumbers": [64]
+  },
+  {
+    "equipmentName": "Blower",
+    "fuseNumbers": [28, 50]
+  },
+  {
+    "equipmentName": "Brake light",
+    "fuseNumbers": [9]
+  },
+  {
+    "equipmentName": "Central locking system",
+    "fuseNumbers": [49, 52, 60]
+  },
+  {
+    "equipmentName": "Central locking system (only touring)",
+    "fuseNumbers": [49, 52, 58, 60]
+  },
+  {
+    "equipmentName": "Cigarette lighter",
+    "fuseNumbers": [47]
+  },
+  {
+    "equipmentName": "Cigarette lighter (Australia)",
+    "fuseNumbers": [26, 47]
+  },
+  {
+    "equipmentName": "DSC",
+    "fuseNumbers": [12, 33, 40, 42, 53, 56, 61]
+  },
+  {
+    "equipmentName": "DSC 4-wheel drive",
+    "fuseNumbers": [12, 33, 35, 40, 42, 53]
+  },
+  {
+    "equipmentName": "Electric fan",
+    "fuseNumbers": [37]
+  },
+  {
+    "equipmentName": "Electric seat heating",
+    "fuseNumbers": [12, 42]
+  },
+  {
+    "equipmentName": "Engine control",
+    "fuseNumbers": [27, 29, 30]
+  },
+  {
+    "equipmentName": "Engine control (only M3)",
+    "fuseNumbers": [22, 29, 30]
+  },
+  {
+    "equipmentName": "Folding outside mirror",
+    "fuseNumbers": [57]
+  },
+  {
+    "equipmentName": "Four-cylinder diesel engine",
+    "fuseNumbers": [22]
+  },
+  {
+    "equipmentName": "Front fog light",
+    "fuseNumbers": [38]
+  },
+  {
+    "equipmentName": "Fuel pump",
+    "fuseNumbers": [54]
+  },
+  {
+    "equipmentName": "Garage door opener",
+    "fuseNumbers": [26]
+  },
+  {
+    "equipmentName": "Glove box light",
+    "fuseNumbers": [52]
+  },
+  {
+    "equipmentName": "Hand lamp",
+    "fuseNumbers": [52]
+  },
+  {
+    "equipmentName": "Headlight cleaning",
+    "fuseNumbers": [51]
+  },
+  {
+    "equipmentName": "Heated outside mirror, passenger",
+    "fuseNumbers": [25]
+  },
+  {
+    "equipmentName": "Heated rear window",
+    "fuseNumbers": [68]
+  },
+  {
+    "equipmentName": "Heated rear window (only cabrio)",
+    "fuseNumbers": [7, 68]
+  },
+  {
+    "equipmentName": "Heated spray nozzles",
+    "fuseNumbers": [25]
+  },
+  {
+    "equipmentName": "Heater",
+    "fuseNumbers": [23, 28, 62]
+  },
+  {
+    "equipmentName": "Hinged window (only coupé)",
+    "fuseNumbers": [71]
+  },
+  {
+    "equipmentName": "Horn",
+    "fuseNumbers": [5, 55]
+  },
+  {
+    "equipmentName": "Immobilizer",
+    "fuseNumbers": [14, 67]
+  },
+  {
+    "equipmentName": "Instrument cluster",
+    "fuseNumbers": [10, 34, 43]
+  },
+  {
+    "equipmentName": "Inside mirror electrochromic",
+    "fuseNumbers": [24, 67]
+  },
+  {
+    "equipmentName": "Interior light",
+    "fuseNumbers": [49, 52]
+  },
+  {
+    "equipmentName": "Light module",
+    "fuseNumbers": [9, 32]
+  },
+  {
+    "equipmentName": "Make-up mirror light",
+    "fuseNumbers": [6]
+  },
+  {
+    "equipmentName": "Manual soft top (only cabrio)",
+    "fuseNumbers": [12, 42, 46]
+  },
+  {
+    "equipmentName": "Navigation",
+    "fuseNumbers": [7, 41]
+  },
+  {
+    "equipmentName": "On-board computer",
+    "fuseNumbers": [9]
+  },
+  {
+    "equipmentName": "On-board Diagnose II",
+    "fuseNumbers": [30, 43]
+  },
+  {
+    "equipmentName": "On-board monitor",
+    "fuseNumbers": [7, 41]
+  },
+  {
+    "equipmentName": "Outside mirror",
+    "fuseNumbers": [31, 57]
+  },
+  {
+    "equipmentName": "Parking aid",
+    "fuseNumbers": [24]
+  },
+  {
+    "equipmentName": "Passenger comp/trunk lighting",
+    "fuseNumbers": [52]
+  },
+  {
+    "equipmentName": "Power soft top (only cabrio)",
+    "fuseNumbers": [6, 12, 35, 42, 46]
+  },
+  {
+    "equipmentName": "Radio",
+    "fuseNumbers": [7, 41]
+  },
+  {
+    "equipmentName": "Rain sensor",
+    "fuseNumbers": [15]
+  },
+  {
+    "equipmentName": "Rear wiper (only touring)",
+    "fuseNumbers": [15, 45]
+  },
+  {
+    "equipmentName": "Reversing light",
+    "fuseNumbers": [27]
+  },
+  {
+    "equipmentName": "Roller sun blind",
+    "fuseNumbers": [12, 42]
+  },
+  {
+    "equipmentName": "Roll-over protective system (only cabrio)",
+    "fuseNumbers": [13]
+  },
+  {
+    "equipmentName": "Secondary air pump",
+    "fuseNumbers": [36]
+  },
+  {
+    "equipmentName": "Shifting gate illumination",
+    "fuseNumbers": [40]
+  },
+  {
+    "equipmentName": "Side airbag",
+    "fuseNumbers": [11]
+  },
+  {
+    "equipmentName": "Sliding/tilt roof",
+    "fuseNumbers": [46]
+  },
+  {
+    "equipmentName": "Socket",
+    "fuseNumbers": [47]
+  },
+  {
+    "equipmentName": "Speed control",
+    "fuseNumbers": [9]
+  },
+  {
+    "equipmentName": "Sequential manual gearbox",
+    "fuseNumbers": [22, 66]
+  },
+  {
+    "equipmentName": "Sequential transmission (only M3)",
+    "fuseNumbers": [8, 22]
+  },
+  {
+    "equipmentName": "Starter interlock",
+    "fuseNumbers": [14]
+  },
+  {
+    "equipmentName": "Telephone",
+    "fuseNumbers": [7, 39]
+  },
+  {
+    "equipmentName": "Thiefproofing system",
+    "fuseNumbers": [49, 67]
+  },
+  {
+    "equipmentName": "Trailer coupling",
+    "fuseNumbers": [44]
+  },
+  {
+    "equipmentName": "Tyre pressure",
+    "fuseNumbers": [12, 31, 42, 69]
+  },
+  {
+    "equipmentName": "Water valve, A/C",
+    "fuseNumbers": [62]
+  },
+  {
+    "equipmentName": "Window lift front",
+    "fuseNumbers": [48, 49]
+  },
+  {
+    "equipmentName": "Window lift rear",
+    "fuseNumbers": [71]
+  },
+  {
+    "equipmentName": "Windscreen washer system",
+    "fuseNumbers": [49, 52, 59]
+  }
 ]
